@@ -18,24 +18,16 @@ const Card = ({ movie }) => {
 
 Card.propTypes = {
   movie: PropTypes.shape({
-    ranking: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
+    ranking: PropTypes.number,
+    title: PropTypes.string,
+    year: PropTypes.number,
     img: {
-      src: PropTypes.string.isRequired,
-      alt: PropTypes.string.isRequired,
+      src: PropTypes.string,
+      alt: PropTypes.string,
     },
-    distributor: PropTypes.string.isRequired,
-    amount: PropTypes.number.isRequired,
-  }),
-};
-
-Card.defaultProps = {
-  movie: {
-    ranking: 0,
-    title: 'Movie Title',
-    year: 2000,
-  },
+    distributor: PropTypes.string,
+    amount: PropTypes.number,
+  }).isRequired,
 };
 
 export default Card;
