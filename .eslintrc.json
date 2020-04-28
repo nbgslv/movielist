@@ -4,10 +4,10 @@
         "es6": true
     },
     "extends": [
-        "plugin:react/recommended",
         "airbnb",
-        "prettier",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "prettier/react",
+        "plugin:react/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -21,8 +21,10 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
